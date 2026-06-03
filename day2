@@ -1,0 +1,32 @@
+const math = 85;
+const chemistry = 80;
+const physics = 98;
+const english = 57;
+const hindi = 45;
+
+const total = math + chemistry + physics + english + hindi ;
+const percentage = total/5 ;
+
+let grade;
+if (percentage >=90){
+    grade = "A+";
+} else if (percentage >=75){
+    grade = "A" ;
+} else if (percentage >=60){
+    grade = "B" ;
+} else if (percentage >= 45){
+    grade = "c";
+} else {
+    grade = "Need improvment" ;
+}
+ let result ;
+ if (math < 35 || chemistry < 35 || physics < 35
+    || english < 35 || hindi < 35 ) {
+        result = "fail";
+    } else {
+        result = "pass";
+    }
+    console.log ("Total marks:",total);
+    console.log ("Percentage :",percentage);
+    console.log ("Grade:",grade);
+    console.log ("Result:",result); 
