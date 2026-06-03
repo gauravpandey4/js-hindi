@@ -1,0 +1,8 @@
+const name = ("Gaurav");
+const goal = ("I am starting my software engineering map");
+const today =("29-05-2026");
+
+console.log("Name:",name);
+console.log("Goal:",goal);
+console.log("Today:",today);
+console.log("java script is running sucessfully:");
