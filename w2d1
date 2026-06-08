@@ -1,0 +1,15 @@
+const rawName = " Gaurav Pandey ";
+const rawEmail = " Gauravpandey89625@gmail.com ";
+const Password = " gaurav@123 ";
+const sentence = "I am learning JavaScript step by step";
+const searchWord = "JavaScript";
+
+const cleanName = rawName.trim();
+const cleanEmail = rawEmail.toLowerCase();
+const isPasswordStrong = Password.length >= 8;
+const containsSearchWord = sentence.includes(searchWord);
+
+console.log("clean Name:",cleanName);
+console.log("clean Email:",cleanEmail);
+console.log("Password Strong:",isPasswordStrong);
+console.log("Contains Search Word:", containsSearchWord);
