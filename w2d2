@@ -1,0 +1,31 @@
+const student = {
+  name: "Aman",
+  age: 19,
+  branch: "Computer Science",
+  skills: ["JavaScript", "Git", "Problem Solving"],
+  marks: {
+    maths: 82,
+    programming: 91,
+    english: 76
+  }
+};
+
+function getAverageMarks(studentData) {
+  const marks = studentData.marks;
+  const total = marks.maths + marks.programming + marks.english;
+  return total / 3;
+}
+
+function addSkill(studentData, skill) {
+  studentData.skills.push(skill);
+}
+
+function getProfileSummary(studentData) {
+  return `${studentData.name} is ${studentData.age} years old and studies ${studentData.branch}.`;
+}
+
+addSkill(student, "React");
+
+console.log(getProfileSummary(student));
+console.log("Skills:", student.skills);
+console.log("Average Marks:", getAverageMarks(student).toFixed(2));
